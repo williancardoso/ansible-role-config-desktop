@@ -5,22 +5,23 @@
   include_tasks: user.yml
   tags:
     - users
-    - all
 
 - name: Configure pacotes
   include_tasks: packages.yml
   tags:
     - packages
-    - all
 
 - name: Configure git
   include_tasks: git.yml
   tags:
     - git
-    - all
+
+- name: Configure Ovpn-SERPRO
+  include_tasks: ovpn-serpro.yml
+  tags:
+    - ovpn
 
 - name: Configure OwnClient
   include_tasks: ownclient.yml
   tags:
     - ownclient
-    - all
