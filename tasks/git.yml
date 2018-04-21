@@ -4,4 +4,4 @@
   apt: name=git state=present
 
 - name: Configure .gitconfig
-  template: src=files/gitconfig dest="/home/{{ meu_user }}/.gitconfig" mode=0440
+  template: src=gitconfig dest="/home/{{ meu_user }}/.gitconfig" mode=0440

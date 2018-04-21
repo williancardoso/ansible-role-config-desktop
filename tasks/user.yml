@@ -8,4 +8,4 @@
   apt: name=sudo state=present
 
 - name: Configure sudoers
-  template: src=files/sudo dest="/etc/sudoers.d/{{ meu_user }}" mode=0440
+  template: src=sudo dest="/etc/sudoers.d/{{ meu_user }}" mode=0440
