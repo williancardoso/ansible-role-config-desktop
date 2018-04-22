@@ -1,0 +1,11 @@
+---
+
+- name: Preparando Repositorio
+  shell: |
+    add-apt-repository ppa:kazam-team/stable-series
+    apt-get update
+
+- name: Install Kazam
+  apt:
+    name: kazam
+    state: latest

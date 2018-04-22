@@ -6,6 +6,11 @@
   tags:
     - users
 
+- name: Install Kazam
+  include_tasks: kazam.yml
+  tags:
+    - kazam
+
 - name: Configure pacotes
   include_tasks: packages.yml
   tags:
