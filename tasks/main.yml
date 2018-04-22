@@ -3,30 +3,18 @@
 
 - name: Configure users
   include_tasks: user.yml
-  tags:
-    - users
 
 - name: Install Kazam
   include_tasks: kazam.yml
-  tags:
-    - kazam
 
 - name: Configure pacotes
   include_tasks: packages.yml
-  tags:
-    - packages
 
 - name: Configure git
   include_tasks: git.yml
-  tags:
-    - git
 
 - name: Configure Ovpn-SERPRO
   include_tasks: ovpn-serpro.yml
-  tags:
-    - ovpn
-
+  
 - name: Configure OwnClient
   include_tasks: ownclient.yml
-  tags:
-    - ownclient
